@@ -1,0 +1,82 @@
+.div_mainItem {
+  display: flex;
+  background-color: #ecd9d984;
+  width: 300px;
+  height: 280px;
+  margin-bottom: 50px;
+  padding: 14px;
+  flex-direction: column;
+  border: 3px solid rgb(126, 120, 120);
+    border-radius: 10px;
+    
+}
+
+.div_mainItem_image {
+  margin: 0 auto;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+}
+
+span {
+  font-size: 22px;
+
+}
+
+.div_mainItem_menu {
+  display: flex;
+ 
+  flex-direction: column;
+}
+.div_mainItem_button
+ {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+}
+
+.mainItem_button {
+  width: 160px;
+  font-size: 24px;
+  padding: 8px;
+  border: 2px solid rgb(126, 120, 120);
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.mainItem_button:hover{
+    background: rgb(214, 213, 211);
+    
+}
+
+.mainItem_button:hover::before {
+    content: 'The item should be added in the Shopping Cart';
+    width: 200px;
+    padding: 10px 5px;
+    position:absolute;
+    background: rgb(238, 243, 238);
+    top: 56px;
+   right: 10px;
+   font-size: 20px;
+   border-radius: 10px;
+}
+
+.mainItem_button:focus:before {
+ display: none;
+}
+
+.mainItem_button:hover::after {
+    content: '';
+    position:absolute;
+    top: 18px;
+   right: 50px;
+   border: 20px solid transparent; 
+   border-bottom: 20px solid rgb(238, 243, 238);
+}
+
+.mainItem_button:focus::after {
+ display: none;
+}

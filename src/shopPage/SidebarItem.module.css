@@ -1,0 +1,32 @@
+.div_sidebarItem {
+    display: flex;
+    background-color: #ecd9d984;
+    margin-bottom:30px;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.div_sidebarItem_button
+ {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+}
+
+.sidebarItem_button {
+  width: 200px;
+  font-size: 24px;
+  padding:20px 30px;
+  border: 2px solid rgb(126, 120, 120);
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.sidebarItem_button:hover{
+    background: rgb(214, 213, 211);
+    
+}
+  

@@ -1,0 +1,28 @@
+.div_header{
+    display: flex;
+    width: 360px;
+    padding: 20px;
+    justify-content:space-around;
+   font-size: 28px;
+   position: relative;
+}
+
+  .item a{
+    color: rgb(221, 196, 196);
+    text-decoration: none;
+  }
+  
+  .item .active {
+    color: rgb(27, 7, 81);
+  }
+  
+  #firstlink:before{
+    content: '';
+    width: 4px;
+    height: 34px;
+    background: black;
+    position: absolute;
+    left: 150px;
+  }
+  
+  

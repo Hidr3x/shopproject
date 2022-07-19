@@ -1,0 +1,20 @@
+.div_sidebarItem {
+    margin:20px 0;
+    border-radius: 10px;
+}
+
+.div_sidebarItem_input
+ {
+  margin-top: 8px;
+ }
+
+.sidebarItem_input{
+  font-size: 20px;
+  padding: 5px 10px;
+  width: 380px;
+  border: 2px solid rgb(126, 120, 120);
+  border-radius: 10px;
+  cursor: text;
+  position: relative;
+}
+

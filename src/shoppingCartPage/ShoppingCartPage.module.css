@@ -1,0 +1,36 @@
+.app_wrapper{
+  display: flex;
+ justify-content:space-around;
+
+}
+
+.app_main {
+  width: 1200px;
+  margin: 0 auto;
+}
+  
+.submit{
+  font-size: 30px;
+  cursor: pointer;
+  padding: 5px 50px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.div_submit{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 24px;
+
+}
+
+.div_submit span{
+ font-size:25px ;
+ margin-right: 80px;
+ margin-top: 10px;
+  }
+
+  .submit:hover{
+    background: rgb(214, 213, 211);
+}
+  

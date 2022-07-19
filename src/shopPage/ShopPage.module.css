@@ -1,0 +1,9 @@
+.app_wrapper{
+    display: flex;
+   justify-content:space-around;
+}
+
+.app_main {
+    width: 1200px;
+    margin: 0 auto;
+}
