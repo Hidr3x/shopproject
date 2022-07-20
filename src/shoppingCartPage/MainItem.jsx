@@ -2,7 +2,7 @@ import React from "react";
 import style from "./MainItem.module.css";
 import { FaTrash } from "react-icons/fa";
 import { useState } from "react";
-import total from "../Base/total";
+
 
 function MainItem(props) {
   const [count, setCount] = useState(1);
@@ -44,7 +44,7 @@ function MainItem(props) {
         <FaTrash
           className={style.delete_icon}
           onClick={function () {
-            const index = props.basket.findIndex((n) => n.ID === props._id);
+            const index = props.basket.findIndex((n) => n._id === props.ID);
             if (index !== -1) {
               props.basket.splice(index, 1);
             }

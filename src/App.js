@@ -6,13 +6,11 @@ import basket from "./Base/basket";
 
 
 function App(props) {
-  const makeUniq = (arr) => [...new Set(arr)];
   return (
     <BrowserRouter>
       <div>
-    
         <Routes>
-          <Route path="/"  element={<ShopPage  />} />
+          <Route path="/"  element={<ShopPage rerender={props.rerender} basket={basket} />} />
           <Route path="/shop" element={<ShopPage rerender={props.rerender} basket={basket}/>} />
           <Route
             path="/shopping-cart"
