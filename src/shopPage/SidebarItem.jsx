@@ -1,14 +1,16 @@
-import React from 'react';
-import style from "./SidebarItem.module.css"
+import React from "react";
+import style from "./SidebarItem.module.css";
 
-
-
-function SidebarItem() {
-    return (
-      <div className={style.div_sidebarItem} >
-<div className={style.div_sidebarItem_button}><button className={style.sidebarItem_button}>ETC...</button></div>
+function SidebarItem(props) {
+  return (
+    <div className={style.div_sidebarItem}>
+      <div className={style.div_sidebarItem_button}>
+        <button onClick={()=>{props.rerender()}} className={style.sidebarItem_button}>
+          {props.name}
+        </button>
       </div>
-    );
-  }
-  
-  export default SidebarItem;
+    </div>
+  );
+}
+
+export default SidebarItem;

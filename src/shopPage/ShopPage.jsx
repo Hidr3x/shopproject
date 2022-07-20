@@ -11,7 +11,7 @@ function ShopPage(props) {
       <div className={style.app_main}>
         <Header />
         <div className={style.app_wrapper}>
-          <Sidebar />
+          <Sidebar rerender={props.rerender}/>
           <Main store={store} basket={props.basket}/>
           </div>
       </div>

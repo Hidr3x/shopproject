@@ -3,7 +3,6 @@ import style from "./MainItem.module.css";
 
 
 function MainItem(props) {
- 
   return (
     <div className={style.div_mainItem}>
       <div className={style.div_mainItem_image}>
